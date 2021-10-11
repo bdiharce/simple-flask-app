@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bdiharcesimpleflaskapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bdiharcesimpleflaskapp
+  template:
+    metadata:
+      labels:
+        app: bdiharcesimpleflaskapp 
+    spec:
+      containers:
+        - name: bdiharcesimpleflaskapp 
+          image: containerbdiharce.azurecr.io/bdiharcesimpleflaskapp
+          ports:
+          - containerPort: 80
