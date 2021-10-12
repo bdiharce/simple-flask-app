@@ -16,4 +16,4 @@ spec:
         - name: bdiharcesimpleflaskapp 
           image: containerbdiharce.azurecr.io/bdiharcesimpleflaskapp
           ports:
-          - containerPort: 80
+          - containerPort: 5000
